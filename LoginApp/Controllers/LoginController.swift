@@ -18,20 +18,22 @@ class LoginController: UIViewController {
     private let newUserButton = CustomButton(title: "New user? Create Account.", fontSize: .med)
     private let forgotPasswordButton = CustomButton(title: "Forgot Passworf?", fontSize: .small)
 
-    
+    //MARK: - Lifi Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        didTapNewUser()
         setupUI()
         
         singInButton.addTarget(self, action: #selector(didTapSingIn), for: .touchUpInside)
         newUserButton.addTarget(self, action: #selector(didTapNewUser), for: .touchUpInside)
         forgotPasswordButton.addTarget(self, action: #selector(didTapForgotPassword), for: .touchUpInside)
+        
+//        didTapNewUser()
     }
         
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        
     }
     private func setupUI(){
         view.backgroundColor = .systemBackground
@@ -91,10 +93,35 @@ class LoginController: UIViewController {
     //MARK: - Selectors
     
     @objc func didTapSingIn() {
-        let vc = HomeController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        present(nav, animated: true)
+        let loginReqest = LoginUserRequest(
+            email: emailField.text ?? "",
+            password: passwordField.text ?? "")
+        
+        // Email Check
+        if !Validator.isValidEmail(with: loginReqest.email){
+            AlertManager.showInvolidEmailALert(on: self)
+            return
+        }
+        
+        // Password Check
+        if !Validator.isValidPassword(with: loginReqest.password){
+            AlertManager.showInvolidPasswordlALert(on: self)
+            return
+        }
+        AuthService.shared.signIn(with: loginReqest) { [weak self]
+            error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showSingInErrorAlert(on: self, with: error)
+                return
+            }
+            if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                sceneDelegate.checkAuthentication()
+            }else {
+                AlertManager.showSingInErrorAlert(on: self)
+            }
+        }
+        
     }
     @objc func didTapNewUser() {
         let vc = RegisterController()

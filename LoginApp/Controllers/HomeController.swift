@@ -15,7 +15,7 @@ class HomeController: UIViewController {
         lable.textColor = .label
         lable.textAlignment = .center
         lable.font = .systemFont(ofSize: 24, weight: .semibold)
-        lable.text = "Loading..."
+        lable.text = ""
         lable.numberOfLines = 2
         return lable
     }()
@@ -25,7 +25,17 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        lable.text = "CodeBrash\ncodebrash@gmail.com"
+        
+        AuthService.shared.featchUser { [weak self] user, error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showFetchingUserError(on: self, with: error)
+                return
+            }
+            if let user = user {
+                self.lable.text = "\(user.username)\n\(user.email)"
+            }
+        }
     }
     
     //MARK: - UI Setup
@@ -49,6 +59,16 @@ class HomeController: UIViewController {
     
     //MARK: - Selector
     @objc private func didTapLogOut(){
-        
+        AuthService.shared.signOut { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showLogoutErrorAlert(on: self, with: error )
+                return
+            }
+            
+            if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                sceneDelegate.checkAuthentication()
+            }
+        }
     }
 }

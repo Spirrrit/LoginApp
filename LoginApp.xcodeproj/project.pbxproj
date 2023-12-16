@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31C0E65EF0A02C97DA04D344 /* Pods_LoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4089589F0FBF8B5824E96F0A /* Pods_LoginApp.framework */; };
+		9E0A5A612B1889B100D6395E /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0A5A602B1889B100D6395E /* AlertManager.swift */; };
+		9EBED0A52B18C275003FF2B3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBED0A42B18C275003FF2B3 /* AuthService.swift */; };
+		9EBED0A82B18EB96003FF2B3 /* RegiserUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBED0A72B18EB96003FF2B3 /* RegiserUserRequest.swift */; };
 		9ED9892E2AFFABC6009D61D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9892D2AFFABC6009D61D8 /* AppDelegate.swift */; };
 		9ED989302AFFABC6009D61D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9892F2AFFABC6009D61D8 /* SceneDelegate.swift */; };
 		9ED989372AFFABC8009D61D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED989362AFFABC8009D61D8 /* Assets.xcassets */; };
@@ -19,9 +23,18 @@
 		9ED9894E2AFFFEA3009D61D8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9894D2AFFFEA3009D61D8 /* CustomTextField.swift */; };
 		9EF7B3832B00BA0700C5942D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7B3822B00BA0700C5942D /* CustomButton.swift */; };
 		9EF7B3852B00C9C600C5942D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7B3842B00C9C600C5942D /* WebViewController.swift */; };
+		9EFE41BB2B1A694900D6BFEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EFE41BA2B1A694900D6BFEC /* GoogleService-Info.plist */; };
+		9EFE41BD2B1CC4F200D6BFEC /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE41BC2B1CC4F200D6BFEC /* LoginUserRequest.swift */; };
+		9EFE41BF2B1CD34400D6BFEC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE41BE2B1CD34400D6BFEC /* Validator.swift */; };
+		9EFE41C12B21BB1200D6BFEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE41C02B21BB1200D6BFEC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22A70AEC4D92F5549A3E964B /* Pods-LoginApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.release.xcconfig"; path = "Target Support Files/Pods-LoginApp/Pods-LoginApp.release.xcconfig"; sourceTree = "<group>"; };
+		4089589F0FBF8B5824E96F0A /* Pods_LoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0A5A602B1889B100D6395E /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		9EBED0A42B18C275003FF2B3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9EBED0A72B18EB96003FF2B3 /* RegiserUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiserUserRequest.swift; sourceTree = "<group>"; };
 		9ED9892A2AFFABC6009D61D8 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED9892D2AFFABC6009D61D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED9892F2AFFABC6009D61D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +49,11 @@
 		9ED9894D2AFFFEA3009D61D8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9EF7B3822B00BA0700C5942D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9EF7B3842B00C9C600C5942D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		9EFE41BA2B1A694900D6BFEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EFE41BC2B1CC4F200D6BFEC /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		9EFE41BE2B1CD34400D6BFEC /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		9EFE41C02B21BB1200D6BFEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CA36B035B76A4E4A448B2926 /* Pods-LoginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginApp/Pods-LoginApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +61,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C0E65EF0A02C97DA04D344 /* Pods_LoginApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442890F8E7B0C4F622B8B8D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA36B035B76A4E4A448B2926 /* Pods-LoginApp.debug.xcconfig */,
+				22A70AEC4D92F5549A3E964B /* Pods-LoginApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FBCF9ACD865629E2EC5DC95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4089589F0FBF8B5824E96F0A /* Pods_LoginApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E0A5A5F2B18897C00D6395E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9ED989482AFFADC8009D61D8 /* HomeController.swift */,
+				9ED989442AFFAD96009D61D8 /* LoginController.swift */,
+				9ED989462AFFADB6009D61D8 /* RegisterController.swift */,
+				9ED989422AFFAD8A009D61D8 /* ForgotPasswordController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9EBED0A62B18C398003FF2B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EBED0A72B18EB96003FF2B3 /* RegiserUserRequest.swift */,
+				9EFE41BC2B1CC4F200D6BFEC /* LoginUserRequest.swift */,
+				9EFE41C02B21BB1200D6BFEC /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9ED989212AFFABC6009D61D8 = {
 			isa = PBXGroup;
 			children = (
 				9ED9892C2AFFABC6009D61D8 /* LoginApp */,
 				9ED9892B2AFFABC6009D61D8 /* Products */,
+				442890F8E7B0C4F622B8B8D1 /* Pods */,
+				8FBCF9ACD865629E2EC5DC95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,13 +127,15 @@
 		9ED9892C2AFFABC6009D61D8 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				9ED989482AFFADC8009D61D8 /* HomeController.swift */,
-				9ED989442AFFAD96009D61D8 /* LoginController.swift */,
-				9ED989462AFFADB6009D61D8 /* RegisterController.swift */,
-				9ED989422AFFAD8A009D61D8 /* ForgotPasswordController.swift */,
+				9EBED0A42B18C275003FF2B3 /* AuthService.swift */,
+				9E0A5A602B1889B100D6395E /* AlertManager.swift */,
+				9EFE41BE2B1CD34400D6BFEC /* Validator.swift */,
+				9EBED0A62B18C398003FF2B3 /* Model */,
+				9E0A5A5F2B18897C00D6395E /* Controllers */,
 				9ED9894A2AFFAE11009D61D8 /* Views */,
 				9ED989412AFFAD20009D61D8 /* Supporting */,
 				9ED9893B2AFFABC8009D61D8 /* Info.plist */,
+				9EFE41BA2B1A694900D6BFEC /* GoogleService-Info.plist */,
 				9EF7B3842B00C9C600C5942D /* WebViewController.swift */,
 			);
 			path = LoginApp;
@@ -108,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ED9893E2AFFABC8009D61D8 /* Build configuration list for PBXNativeTarget "LoginApp" */;
 			buildPhases = (
+				18283BFC79C402D0781397B1 /* [CP] Check Pods Manifest.lock */,
 				9ED989262AFFABC6009D61D8 /* Sources */,
 				9ED989272AFFABC6009D61D8 /* Frameworks */,
 				9ED989282AFFABC6009D61D8 /* Resources */,
+				03E2440E2F8E2BAFF38A8D2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,10 +224,53 @@
 			files = (
 				9ED9893A2AFFABC8009D61D8 /* LaunchScreen.storyboard in Resources */,
 				9ED989372AFFABC8009D61D8 /* Assets.xcassets in Resources */,
+				9EFE41BB2B1A694900D6BFEC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E2440E2F8E2BAFF38A8D2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18283BFC79C402D0781397B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9ED989262AFFABC6009D61D8 /* Sources */ = {
@@ -172,8 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ED989432AFFAD8A009D61D8 /* ForgotPasswordController.swift in Sources */,
+				9EBED0A82B18EB96003FF2B3 /* RegiserUserRequest.swift in Sources */,
+				9E0A5A612B1889B100D6395E /* AlertManager.swift in Sources */,
 				9ED989492AFFADC8009D61D8 /* HomeController.swift in Sources */,
+				9EFE41C12B21BB1200D6BFEC /* User.swift in Sources */,
+				9EFE41BD2B1CC4F200D6BFEC /* LoginUserRequest.swift in Sources */,
+				9EBED0A52B18C275003FF2B3 /* AuthService.swift in Sources */,
 				9EF7B3832B00BA0700C5942D /* CustomButton.swift in Sources */,
+				9EFE41BF2B1CD34400D6BFEC /* Validator.swift in Sources */,
 				9EF7B3852B00C9C600C5942D /* WebViewController.swift in Sources */,
 				9ED989472AFFADB6009D61D8 /* RegisterController.swift in Sources */,
 				9ED9892E2AFFABC6009D61D8 /* AppDelegate.swift in Sources */,
@@ -235,7 +347,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FUSE_BUILD_SCRIPT_PHASES = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -250,7 +363,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_GENERATE_MAP_FILE = NO;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -298,7 +412,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FUSE_BUILD_SCRIPT_PHASES = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -307,7 +422,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_GENERATE_MAP_FILE = NO;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -319,25 +435,30 @@
 		};
 		9ED9893F2AFFABC8009D61D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA36B035B76A4E4A448B2926 /* Pods-LoginApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3F7UBX2W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LoginApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Spirrit.LoginApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spirrit.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -349,25 +470,30 @@
 		};
 		9ED989402AFFABC8009D61D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A70AEC4D92F5549A3E964B /* Pods-LoginApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y3F7UBX2W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LoginApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Spirrit.LoginApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spirrit.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
